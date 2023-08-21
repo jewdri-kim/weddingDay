@@ -1,0 +1,264 @@
+.app {
+  text-align: center;
+}
+
+.app-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+.app-link {
+  color: #61dafb;
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App{
+  background: var(--bg);
+  color: var(--text);
+}
+.app-header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background: var(--bg);
+  z-index:10;
+  &:after{
+    display:block;
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:1px;
+    background: var(--border);
+  }
+  .btn-theme{
+    position:absolute;
+    top:20px;
+    right:5%;
+    color: var(--text)
+  }
+}
+.app-content{
+  padding:75px 5% 0;
+
+}
+i.app-nav {
+
+  background-color: var(--bg);
+
+  border-bottom: 1px solid  var(--border);
+
+  position: fixed;
+
+  top: 0;
+
+  width: 100%;
+
+  z-index: 2;
+
+  -webkit-transition: height 0.2s ease-in-out;
+
+  transition: height 0.2s ease-in-out;
+
+  height: 77px;
+
+}
+
+.nav-menus {
+
+  display: flex;
+  position:relative;
+  flex-direction: row;
+
+  margin: 0 auto;
+
+  padding:20px 5%;
+
+}
+.nav-brand{
+  font-size:28px;
+}
+.nav-brand-logo {
+
+  display: block;
+
+  background-position:0 50%;
+
+  background-image:  var(--logo-img);
+
+  background-size:auto 100%;
+
+  background-repeat: no-repeat;
+  color:  var(--text);
+  height: 35px;
+  width:auto;
+  font-size:28px;
+  text-decoration:none;
+  padding-left:45px;
+  font-family: var(--font-logo);
+
+}
+
+
+.feed-wrap{
+  .feed-top{
+    display:flex;
+    justify-content:space-between;
+
+  }
+  .author{
+    .img-box{
+      overflow:hidden;
+      position:relative;
+      width:32px;
+      height:32px;
+      border-radius: 100%;
+      img{
+        position:relative;
+        background:#fff;
+        border-radius: 100%;
+      }
+      &.active{     
+        width:36px;height:36px;
+        padding:2px;
+        &:before{
+          display:block;
+          content:'';
+          width:100%;
+          height:100%;
+          position:absolute;
+          top:0;left:0;
+          background: linear-gradient(to bottom, #FF9702, #f00);
+          border-radius: 100%;
+        }
+      }
+    }
+
+    .info-box{
+      display:flex;
+      align-items:center;
+      margin-left:12px;
+      dt{
+        font-weight:600;
+      }
+     .time{
+      display:flex;
+      align-items:center;
+      position: relative;
+      color:var(--time);
+      font-size:14px;
+      &:before{
+        display:flex;
+        content:'';
+        margin:0 5px 0 10px;
+        width:3px; height:3px;
+        background:var(--time);
+        border-radius: 100%;
+      }
+     }
+    }
+  }
+
+  .feed-description{
+    padding:16px 0;
+    font-size:14px;
+    line-height:20px;
+    border-bottom:1px solid var(--border);
+  }
+}
+
+.wedding-day-text{
+  .top{
+    margin-bottom:10px;
+    line-height:28px;
+    span{
+      font-size:12px;font-weight:400;
+    }
+  }
+}
+.app-content .MuiPaper-root{
+  box-shadow: none;
+}
+.map-wrap{
+  padding:16px 0;
+  font-size:14px;
+  line-height:20px;
+}
+
+:local .map{
+  width:100%;
+  height:30vh;
+}
+.map-area{
+  width:100%;
+  height:30vh;
+}
+.info-wrap{
+  padding:16px 0;
+  font-size:14px;
+  line-height:26px;
+  dl{
+    display:flex;
+    align-items:center;
+    dt{
+      margin-right:10px;
+      font-weight:600;
+    }
+    button{
+      display:inline-flex;
+      margin-left:10px;
+      padding:0 5px;
+      line-height:20px;
+      border:1px solid var(--border);
+      align-items:center;
+      justify-content: center;
+      font-size:12px;
+      color: var(--text)
+    }
+  }
+}
+
+.comment-wrap{
+  padding:20px 0;
+  .comment-list{
+    line-height:20px;
+    font-size:14px;
+   
+    li{
+      margin-top:5px;
+      &:first-child{
+        margin-top:0;
+      }
+    }
+    strong{
+      font-size:600;
+      margin-right:10px;
+    }
+  }
+}
+
+footer{
+  border-top:1px solid var(--border);
+  padding: 20px 0;
+  text-align:center;
+  color: var(--time);
+  font-size:12px;
+}

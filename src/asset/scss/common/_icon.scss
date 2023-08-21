@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+//svg sprite
+[class^="ico-"] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.ico-logo {
+  width: 148px;
+  height: 25px;
+}
+.ico-logo2 {
+  width: 148px;
+  height: 25px;
+}
+.ico-order {
+  width: 20px;
+  height: 19px;
+}
+.ico-setting {
+  width: 26px;
+  height: 26px;
+}
+.ico-alarm {
+  width: 43px;
+  height: 34px;
+}
+.ico-arrow {
+  width: 12px;
+  height: 12px;
+  &.right {
+    transform: rotate(-90deg);
+  }
+  &.left {
+    transform: rotate(90deg);
+  }
+  &.up {
+    transform: rotate(-180deg);
+  }
+  &.type2 {
+    fill: #666;
+  }
+}
+.ico-close {
+  width: 36px;
+  height: 36px;
+  stroke: #fff;
+  fill: transparent;
+  &.type2 {
+    stroke: #000;
+  }
+}
+.ico-close2 {
+  width: 22px;
+  height: 21px;
+  stroke: #000;
+}
+.ico-cook {
+  width: 43px;
+  height: 37px;
+}
+.ico-cook {
+  width: 43px;
+  height: 37px;
+}
+.ico-more {
+  width: 30px;
+  height: 30px;
+  fill: #1d1d1b;
+}
+.ico-my {
+  width: 19px;
+  height: 22px;
+  stroke: #1d1d1b;
+  &.type2 {
+    stroke: #fff;
+  }
+}
+.ico-nav {
+  width: 22px;
+  height: 19px;
+}
+.ico-notice {
+  width: 24px;
+  height: 28px;
+}
+.ico-loc {
+  width: 18px;
+  height: 19px;
+  fill: $CBlack;
+  &.type2 {
+    fill: $CBrand;
+  }
+  &.type3 {
+    fill: #fff;
+  }
+}
+.ico-menu {
+  width: 38px;
+  height: 46px;
+}
+.ico-note {
+  width: 15px;
+  height: 16px;
+}
+.ico-notice2 {
+  width: 40px;
+  height: 40px;
+}
+.ico-warning {
+  width: 50px;
+  height: 50px;
+}
+.ico-bi {
+  width: 50px;
+  height: 50px;
+  fill: $CBlack;
+  &.type2 {
+    fill: #fff;
+  }
+}
+.ico-error {
+  width: 50px;
+  height: 50px;
+}
+[class^="ico-face"] {
+  width: 36px;
+  height: 36px;
+  fill: #482012;
+}
+.active {
+  [class^="ico-face"] {
+    fill: #c73200;
+  }
+}
+.ico-arrow2 {
+  width: 12px;
+  height: 20px;
+  stroke: $CBlack;
+  &.left {
+    transform: rotate(-180deg);
+  }
+  &.down {
+    transform: rotate(90deg);
+  }
+  &.up {
+    transform: rotate(-90deg);
+  }
+  &.type2 {
+    stroke: $CBrand;
+  }
+}
+.ico-search {
+  width: 19px;
+  height: 19px;
+  stroke: #fff;
+  &.type2 {
+    stroke: $CBlack;
+  }
+}
+.ico-shopping {
+  width: 22px;
+  height: 21px;
+}
+.ico-check {
+  width: 19px;
+  height: 14px;
+  stroke: #1d1d1b;
+  &.type2 {
+    stroke: #666;
+  }
+}
+.ico-naver,
+.ico-kakao,
+.ico-google,
+.ico-apple {
+  width: 50px;
+  height: 50px;
+}
+.ico-join {
+  width: 110px;
+  height: 110px;
+}
+
+.ico-pw {
+  width: 110px;
+  height: 110px;
+}
+
+.ico-dormancy {
+  width: 100px;
+  height: 100px;
+}
+
+.ico-dormancy2 {
+  width: 110px;
+  height: 110px;
+}
+
+.ico-memberout{
+  width: 110px;
+  height: 110px;
+}
+
+.icon-bg {
+  background: #fff;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-bg2 {
+  @extend .icon-bg;
+  background: $CBrand2;
+}
+
+.ico-close3 {
+  width: 24px;
+  height: 24px;
+}
+.ico-search2 {
+  width: 31px;
+  height: 30px;
+}
+.ico-download,
+.ico-download2 {
+  width: 20px;
+  height: 18px;
+}
+.ico-search3 {
+  width: 29px;
+  height: 28px;
+}
+.ico-coupon {
+  width: 49px;
+  height: 28px;
+}
+.ico-calender {
+  width: 12px;
+  height: 13px;
+}
+.ico-call {
+  width: 12px;
+  height: 12px;
+}
+.ico-loc2 {
+  width: 13px;
+  height: 13px;
+}
+.ico-time {
+  width: 12px;
+  height: 12px;
+}
+.ico-board {
+  width: 14px;
+  height: 14px;
+}
+.ico-reset {
+  width: 24px;
+  height: 24px;
+}
+.ico-gift,
+.ico-gift2 {
+  width: 23px;
+  height: 23px;
+}
+.ico-stamp {
+  width: 42.7px;
+  height: 42.9px;
+}
+.ico-delete {
+  width: 26px;
+  height: 24px;
+}
+
+.ico-order3 {
+  width: 31px;
+  height: 35px;
+}
+.ico-barcode{
+  width:21px;
+  height:14px;
+}
+.ico-share{
+  width:24px;
+  height:24px;
+}
+.ico-calender2{
+  width:17px;
+  height:16px;
+}
+.ico-cart{
+  width:81px;
+  height:46px;
+}
+.ico-search4{
+  width:18px;
+  height:18px;
+}
+.ico-list, 
+.ico-list2{
+  width:20px;
+  height:20px;
+}
+.ico-story{
+  width:46px;
+  height:32px;
+}
+.ico-mall{
+  width:46px;
+  height:35px;
+}
+.ico-smile{
+  width: 18px;
+  height: 18px;
+}
+.ico-zoom{
+  width: 18px;
+  height: 22px;
+}
+.ico-freashorder{
+  width:22px;
+  height:21px;
+}
+.ico-stamp2{
+  width:35px;
+  height:30px;
+}
